@@ -4,7 +4,7 @@ import scrapy
 
 class WikipediaSpiderSpider(scrapy.Spider):
     name = 'wikipedia_spider'
-    allowed_domains = ['https://ja.wikipedia.org/wiki/']
+    allowed_domains = ['ja.wikipedia.org']
     start_urls = ['https://ja.wikipedia.org/wiki/Wikipedia:ウィキポータル']
 
     def parse(self, response):
